@@ -49,8 +49,11 @@ const App = () => {
       {temperatureColor && (
         <div style={{ marginTop: "20px" }}>
           <h2>Weather Information</h2>
-          <p>Temperature: <span style={{ color: temperatureColor }}>{temp}°C</span></p>
-          <p>Weather Conditions: {condition}</p>
+          <p style={{ color: temperatureColor }}>{temp}°C</p>
+          <p>{condition}</p>
+          <p style={{ color: temperatureColor }}>
+            Color: {temperatureColor}
+          </p>
         </div>
       )}
     </div>
